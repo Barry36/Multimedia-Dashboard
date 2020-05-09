@@ -59,7 +59,7 @@ def process():
 	cursor.execute("select count(*) from information_schema.tables where Table_schema = 'deviceDashboard';")
 	check_database = cursor.fetchall()
 	if check_database == [(0,)]:
-		executeScriptsFromFile(cursor, "./temp.sql")
+		executeScriptsFromFile(cursor, "./create_database.sql")
 	cursor.execute("USE deviceDashboard;")
 	
 	status_code = insert(cursor,request.form)
