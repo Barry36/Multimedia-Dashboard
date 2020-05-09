@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>多媒体设备使用登记系统</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <table width="832" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable
+          method="POST" action="app.py"
+        -->
+        <tr>
+            <td colspan="2">
+                <form>
+        <tr>
+            <td width="774" height="693" valign="top">
+                <table width="714" height="514" border="0" align="center">
+                    <!--DWLayoutTable-->
+                    <tr>
+                        <td height="79" colspan="6" valign="middle" class="STYLE5"><div align="center">多媒体设备使用登记系统</div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" valign="middle" class="STYLE6">
+                            <select size="1" name="grade" id="select_grade">
+                                <option value="7">七年级</option>
+                                <option value="8">八年级</option>
+                                <option value="9">九年级</option>
+                                <option value="10">高一年级</option>
+                                <option value="11">高二年级</option>
+                                <option value="12">高三年级</option>
+                            </select>
+                        </td>
+                        <td width="199" valign="middle" class="STYLE6">
+                            <select size="1" name="course" id="select_class">
+                                <option value="1" selected>1班</option>
+                                <option value="2">2班</option>
+                                <option value="3">3班</option>
+                                <option value="4">4班</option>
+                                <option value="5">5班</option>
+                                <option value="6">6班</option>
+                                <option value="7">7班</option>
+                                <option value="8">8班</option>
+                                <option value="9">9班</option>
+                                <option value="10">10班</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="62" colspan="2" class="STYLE6">
+                            节　次：
+                            <select size="1" name="course" id="select_course">
+                                <option value="1" selected>第一节</option>
+                                <option value="2">第二节</option>
+                                <option value="3">第三节</option>
+                                <option value="4">第四节</option>
+                                <option value="5">第五节</option>
+                                <option value="6">第六节</option>
+                                <option value="7">第七节</option>
+                                <option value="8">第八节</option>
+                            </select>
+                        </td>
+                        <td colspan="3" valign="middle" class="STYLE6">
+                            使用日期：
+                            <input type="date" name="useDate" id="useDate" value="" />
+                        </td>
+                        <td valign="middle">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="61" colspan="2" class="STYLE6">
+                            学　科：
+                            <select size="1" name="subject" id="subject"> 
+                                <option value="Chinese" selected>语文</option>
+                                <option value="Math">数学</option>
+                                <option value="English">英语</option>
+                                <option value="Pyhsics">物理</option>
+                                <option value="Chemistry">化学</option>
+                                <option value="Biology">生物</option>
+                                <option value="History">历史</option>
+                                <option value="Geography">地理</option>
+                                <option value="Politics">政治</option>
+                                <option value="PE">体育</option>
+                                <option value="Music">音乐</option>
+                                <option value="Arts">美术</option>
+                                <option value="IT">信息技术</option>
+                                <option value="CT">通用技术</option>
+                                <option value="LT">劳动技术</option>
+                                <option value="Others">其他</option>
+                            </select>
+                        </td>
+                        <td colspan="3" valign="middle">
+                            <span class="STYLE6">　设备状况：</span>
+                            <select size="1" name="is_normal" id="is_normal">
+                                <option value="1" selected>正常</option>
+                                <option value="0">有问题</option>
+                            </select>
+                        </td>
+                        <td valign="middle">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="128" height="153" valign="middle">
+                            <p class="STYLE6">　　问题描述:</p>
+                            <p class="STYLE6">&nbsp;</p>
+                        </td>
+                        <td colspan="3" valign="middle">
+                            <p>
+                                <textarea name="description" rows="6" cols="30" id="description"></textarea>
+                            </p>
+                            <p><b class="STYLE6">（若无问题填“无”）</b></p>
+                        </td>
+                        <td colspan="2" align="left" valign="middle">
+                            <span class="STYLE6">使用人：</span>
+                            <input type="text" name="user" size="10" id="user" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="62" colspan="3" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+                        <td width="211" valign="top">
+                            <p>
+                                <input type="submit" value="提交" name="submit">
+                                <input type="reset" value="重置" name="reset">
+                            </p>
+                        </td>
+                        <td colspan="2" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="6"></td>
+                        <td width="80"></td>
+                        <td width="25"></td>
+                        <td></td>
+                        <td width="45"></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p>&nbsp;</p>
+            </td>
+            <td width="58">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+<script src="../static/js/form.js"></script>
+
+</html>
