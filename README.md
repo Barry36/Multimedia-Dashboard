@@ -20,6 +20,7 @@
 3. Add account hostname, username and password at line 54-56 in app.py
 
 ## Start the application 
-Open your cmd or terminal, Run the application with command `python3 app.py`. Now, you should see the backend is running!
+1. Open your cmd or terminal, Run the application with command `python3 app.py`. Now, you should see the backend is running!
+2. For Apache users: you can access the Dashboard by visiting the link: http://127.0.0.1:5000/
 
 ## Notice: To support Chinese characters, change the encoding value from "UTF-8" to "GBK" under jinja2/loaders.py reference: https://programtip.com/en/art-129326
