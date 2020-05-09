@@ -3,14 +3,6 @@ $(document).ready(function() {
 	$('form').on('submit', function(event) {
 		var user = $('#user').val();
 		var useDate = $('#useDate').val();
-		// if(!user){
-		// 	alert("请输入用户名");
-		// 	return false;
-		// }
-		// if(!useDate){
-		// 	alert("请选择日期");
-		// 	return false;
-		// }
 		$.ajax({
 			data : {
 				grade: $('#select_grade').val(),
@@ -30,7 +22,7 @@ $(document).ready(function() {
 				alert(data.error);
 			}
 			else {
-				alert("您已成功登记！");
+				alert("Your Response has been sent successfully!");
 				location.reload();
 				
 			}

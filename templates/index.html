@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <title>多媒体设备使用登记系统</title>
+    <title>Multimedia Dashboard</title>
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -16,137 +16,120 @@
     
 </head>
 <body>
-    <table width="832" border="0" align="center" cellpadding="0" cellspacing="0">
-        <!--DWLayoutTable
-          method="POST" action="app.py"
-        -->
-        <tr>
-            <td colspan="2">
-                <form>
-        <tr>
-            <td width="774" height="693" valign="top">
-                <table width="714" height="514" border="0" align="center">
-                    <!--DWLayoutTable-->
-                    <tr>
-                        <td height="79" colspan="6" valign="middle" class="STYLE5"><div align="center">多媒体设备使用登记系统</div></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" valign="middle" class="STYLE6">
-                            <select size="1" name="grade" id="select_grade">
-                                <option value="7">七年级</option>
-                                <option value="8">八年级</option>
-                                <option value="9">九年级</option>
-                                <option value="10">高一年级</option>
-                                <option value="11">高二年级</option>
-                                <option value="12">高三年级</option>
-                            </select>
-                        </td>
-                        <td width="199" valign="middle" class="STYLE6">
-                            <select size="1" name="course" id="select_class">
-                                <option value="1" selected>1班</option>
-                                <option value="2">2班</option>
-                                <option value="3">3班</option>
-                                <option value="4">4班</option>
-                                <option value="5">5班</option>
-                                <option value="6">6班</option>
-                                <option value="7">7班</option>
-                                <option value="8">8班</option>
-                                <option value="9">9班</option>
-                                <option value="10">10班</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="62" colspan="2" class="STYLE6">
-                            节　次：
-                            <select size="1" name="course" id="select_course">
-                                <option value="1" selected>第一节</option>
-                                <option value="2">第二节</option>
-                                <option value="3">第三节</option>
-                                <option value="4">第四节</option>
-                                <option value="5">第五节</option>
-                                <option value="6">第六节</option>
-                                <option value="7">第七节</option>
-                                <option value="8">第八节</option>
-                            </select>
-                        </td>
-                        <td colspan="3" valign="middle" class="STYLE6">
-                            使用日期：
-                            <input type="date" name="useDate" id="useDate" value="" />
-                        </td>
-                        <td valign="middle">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td height="61" colspan="2" class="STYLE6">
-                            学　科：
-                            <select size="1" name="subject" id="subject"> 
-                                <option value="Chinese" selected>语文</option>
-                                <option value="Math">数学</option>
-                                <option value="English">英语</option>
-                                <option value="Pyhsics">物理</option>
-                                <option value="Chemistry">化学</option>
-                                <option value="Biology">生物</option>
-                                <option value="History">历史</option>
-                                <option value="Geography">地理</option>
-                                <option value="Politics">政治</option>
-                                <option value="PE">体育</option>
-                                <option value="Music">音乐</option>
-                                <option value="Arts">美术</option>
-                                <option value="IT">信息技术</option>
-                                <option value="CT">通用技术</option>
-                                <option value="LT">劳动技术</option>
-                                <option value="Others">其他</option>
-                            </select>
-                        </td>
-                        <td colspan="3" valign="middle">
-                            <span class="STYLE6">　设备状况：</span>
-                            <select size="1" name="is_normal" id="is_normal">
-                                <option value="1" selected>正常</option>
-                                <option value="0">有问题</option>
-                            </select>
-                        </td>
-                        <td valign="middle">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td width="128" height="153" valign="middle">
-                            <p class="STYLE6">　　问题描述:</p>
-                            <p class="STYLE6">&nbsp;</p>
-                        </td>
-                        <td colspan="3" valign="middle">
-                            <p>
-                                <textarea name="description" rows="6" cols="30" id="description"></textarea>
-                            </p>
-                            <p><b class="STYLE6">（若无问题填“无”）</b></p>
-                        </td>
-                        <td colspan="2" align="left" valign="middle">
-                            <span class="STYLE6">使用人：</span>
-                            <input type="text" name="user" size="10" id="user" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="62" colspan="3" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
-                        <td width="211" valign="top">
-                            <p>
-                                <input type="submit" value="提交" name="submit">
-                                <input type="reset" value="重置" name="reset">
-                            </p>
-                        </td>
-                        <td colspan="2" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td height="6"></td>
-                        <td width="80"></td>
-                        <td width="25"></td>
-                        <td></td>
-                        <td width="45"></td>
-                        <td></td>
-                    </tr>
-                </table>
-                <p>&nbsp;</p>
-            </td>
-            <td width="58">&nbsp;</td>
-        </tr>
-    </table>
+<div class="w-75 p-3 text-center" style="margin-left: auto;margin-right: auto;">
+    <!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Welcome to Multimedia Dashboard</p>
+    <br><br>
+    <div class="form-row mb-4">
+        <div class="col">
+
+            <!-- Grade Number -->
+            <label>Choose Grade</label>
+            <select class="browser-default custom-select mb-4" size="1" name="grade" id="select_grade">
+                <option value="" disabled>select a grade</option>
+                <option value="7" selected>grade 7</option>
+                <option value="8">grade 8</option>
+                <option value="9">grade 9</option>
+                <option value="10">grade 10</option>
+                <option value="11">grade 11</option>
+                <option value="12">grade 12</option>
+            </select>
+        </div>
+        <div class="col">
+            
+            <!-- Class Number -->
+            <label>Choose Class Number</label>
+            <select class="browser-default custom-select mb-4" size="1" name="course" id="select_class">
+                <option value="" disabled>select a course</option>
+                <option value="1" selected>Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Choose Course Number</label>
+            <select class="browser-default custom-select mb-4" size="1" name="course" id="select_course">
+                <option value="" disabled>select a course</option>
+                <option value="1" selected>Course 1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <label>Choose Subject</label>
+            <select class="browser-default custom-select mb-4" size="1" name="subject" id="subject"> 
+                <option value="" disabled>select a subject</option>
+                <option value="Chinese" selected>Chinese</option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Pyhsics">Pyhsics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Politics">Politics</option>
+                <option value="PE">PE</option>
+                <option value="Music">Music</option>
+                <option value="Arts">Arts</option>
+                <option value="IT">IT</option>
+                <option value="CT">CT</option>
+                <option value="LT">LT</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <label>Device Status</label>
+            <select class="browser-default custom-select mb-4" size="1" name="is_normal" id="is_normal">
+                <option value="1" selected>normal</option>
+                <option value="0">Not working</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <label>Signature</label>
+            <input class="form-control mb-4" type="text" name="user" size="10" id="user" />
+        </div>
+
+        <div class="col">
+            <label>Date</label>
+            <input class="form-control mb-4" type="date" name="useDate" id="useDate" value="" />
+        </div>
+    </div>
+    <!-- Message -->
+    <div class="form-group">
+        <textarea id="description" name="description" class="form-control rounded-0" rows="3" placeholder="Message"></textarea>
+    </div>
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+    <!-- Send button -->
+    <input class="btn btn-info btn-block my-0 waves-effect waves-light" type="submit" value="Send" name="submit">
+    <input class="btn btn-danger btn-block waves-effect waves-light" type="reset" value="Reset" name="reset">
+</form>
+</div>
+<!-- Default form contact -->
 </body>
 
 <!-- JQuery -->

@@ -37,7 +37,11 @@ def insert(cursor,form):
 		cursor.execute("INSERT INTO info (grade, class,course, useDate, subject,is_normal,description,user) VALUES ( '%d','%d','%d','%s','%s','%d','%s','%s');" % (grade,class_num,course_num,useDate,subject,is_normal,description,user))
 		return 0
 	else:
-		return -1
+		if not user:
+			return -1
+		if not useDate:
+			return -2
+		
 
 @app.route('/')
 def index():
@@ -60,7 +64,9 @@ def process():
 	
 	status_code = insert(cursor,request.form)
 	if(status_code == -1):
-		return jsonify({'error' : '请填写使用日期和使用人!'})
+		return jsonify({'error' : 'Missing Signature!'})
+	elif(status_code == -2):
+		return jsonify({'error' : 'Missing Date!'})
 	else:
 		dbconnection.commit()
 	return jsonify({'msg':'success'})
